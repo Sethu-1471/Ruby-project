@@ -1,0 +1,35 @@
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @colid.name %>
+  </h1>
+
+<p>
+  <strong>Designation:</strong>
+  Student
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @colid.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @colid.email %>
+</p>
+
+<p>
+  <strong>Staff:</strong>
+  <%= @colid.staff %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @colid.location %>
+</p>
+
+<hr class="my-4">
+<%= link_to 'Edit', edit_colid_path(@colid), class: 'btn btn-primary' %>
+<%= link_to 'Back', colids_path, class: 'btn btn-secondary' %>
+</div>

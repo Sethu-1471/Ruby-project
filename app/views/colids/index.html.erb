@@ -1,0 +1,36 @@
+
+<h1>Student</h1>
+
+<%= link_to 'New Student', new_colid_path, class: 'btn btn-success' %>
+
+<br />
+<br />
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Staff</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @colids.each do |colid| %>
+      <tr>
+        <td><%= colid.name %></td>
+        <td><%= colid.phone %></td>
+        <td><%= colid.email %></td>
+        <td><%= colid.staff %></td>
+        <td><%= colid.location %></td>
+        <td><%= link_to 'Show', colid, class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Edit', edit_colid_path(colid), class: 'btn btn-success' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

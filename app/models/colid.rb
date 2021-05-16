@@ -1,0 +1,2 @@
+class Colid < ApplicationRecord
+end
